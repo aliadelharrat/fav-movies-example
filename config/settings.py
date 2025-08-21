@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-m6l#x_smi_25@tue$cd0s3!*5yb(r(q3mu_b^f-ba0zx^n@aw8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "fav-movies-example-aliadelharrat7976-6s1ql2wu.leapcell.dev"
+]
 
 
 # Application definition

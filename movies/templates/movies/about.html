@@ -1,0 +1,19 @@
+{% extends "movies/_base.html" %}
+{% block "title" %}
+    About Me
+{% endblock "title" %}
+{% block "content" %}
+    <h1>{{ "I like mystery movies like:"|title }}</h1>
+    {% if movies %}
+        <ul>
+            {% for movie in movies %}<li>{{ movie|title }}</li>{% endfor %}
+        </ul>
+        {% load static %}
+        <img src="{% static "movies/bg.png" %}"
+             alt="kaiju 8"
+             width="400"
+             height="300" />
+    {% else %}
+        <p>There's no movies</p>
+    {% endif %}
+{% endblock "content" %}
